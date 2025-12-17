@@ -133,7 +133,7 @@ class KNearestNeighbors(ClassifierMixin, BaseEstimator):
             unique, counts = np.unique(labels, return_counts=True)
             y_pred.append(unique[np.argmax(counts)])
 
-        #print(y_pred)
+        # print(y_pred)
 
         return np.array(y_pred)
 
